@@ -1,3 +1,6 @@
+# rpcserver
+node 调用zcash 并解析数据
+
 ## 环境
 1. 需安装node
 2. 启动zcash rpc服务
