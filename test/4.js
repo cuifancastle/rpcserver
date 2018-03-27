@@ -1,5 +1,5 @@
 const fs = require('fs');
-const {getBlock} = require('./utils2')
+const {getBlock} = require('./utils')
 let app = async function(){
   for(let i=2000;i<2001;i++){
     const block = await getBlock(i);

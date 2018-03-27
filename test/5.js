@@ -1,4 +1,4 @@
-const {formatBlock} = require('./utils2')
+const {formatBlock} = require('./utils')
 let block = {
   "hash": "00000006943381ec2cce0eaffa33d6942f7dc5aca5709ceaeb12965a128b388c",
   "confirmations": 291173,

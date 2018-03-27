@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const {getBlock} = require('../test/utils2')
+const {getBlock} = require('../test/utils')
 router.get('/', function (req, res, next) {
   res.send('<a href="/1">块高1</a>')
 });
