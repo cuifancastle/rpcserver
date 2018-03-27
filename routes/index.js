@@ -7,10 +7,11 @@ router.get('/', function (req, res, next) {
 router.get('/:id', function (req, res, next) {
   const app = async function(){
     try{
-      console.log()
-      res.send(await getBlock((req.params.id-0)))
+      const data = await getBlock((req.params.id-0))
+      // res.send(await getBlock((req.params.id-0)))
+      res.render('index',{title:req.params.id,data:data})
     }catch(e){
-      res.send('getBlock Error',e)
+      res.send('getBlock Error')
     }
   }
   app();

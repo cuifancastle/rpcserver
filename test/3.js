@@ -32,8 +32,9 @@ const getBlock = async function (blockHeight){
   }
 };
 let app = async function(){
-  for(let i=1;i<10;i++){
+  for(let i=292550;i<292554;i++){
     await getBlock(i);
+    console.log('getBlock',i)
   }
 }
 app();

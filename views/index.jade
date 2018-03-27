@@ -1,5 +1,13 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+    h1= title
+    -   var next = title-0+1;
+    -   var pre = title-0 -1;if(pre<1)pre = 1;
+
+    a(href="/#{pre}") 上一块#{pre}
+    a(href="/#{next}") 下一块#{next}
+
+    -  var m = data.toString();m = JSON.parse(m);m = JSON.stringify(m,null,2)
+
+    <pre><code class="language-json">#{m}</code></pre>

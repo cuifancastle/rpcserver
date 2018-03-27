@@ -1,7 +1,7 @@
 const request = require('request');
 
 let options = {
-  url: 'http://192.168.172.204:8232',
+  url: 'http://192.168.172.131:8232',
   method:"POST",
   headers: {
     'Content-Type': 'application/json',
@@ -44,10 +44,10 @@ module.exports={
           try{
             resolve(JSON.parse(body))
           }catch(e){
-            reject('parse Error')
+            reject('getblock parse Error')
           }
         }else{
-          reject('request Error')
+          reject('getblock request Error')
         }
       });
     });
@@ -65,10 +65,10 @@ module.exports={
           try{
             resolve(JSON.parse(body))
           }catch(e){
-            reject('parse Error')
+            reject('getrawtransaction parse Error')
           }
         }else{
-          reject('request Error')
+          reject('getrawtransaction request Error')
         }
       });
     });
@@ -89,7 +89,7 @@ module.exports={
             reject('parse Error')
           }
         }else{
-          reject('request Error')
+          reject('getrawtransaction request Error')
         }
       });
     });
